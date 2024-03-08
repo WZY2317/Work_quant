@@ -14,8 +14,8 @@ secretKey = '''your'''
 passphrase = ""
 
 def ws_for_binance_future():
-    my_client_bn_future = UMFuturesWebsocketClient(on_message=message_handler_future) 
-    my_client_bn_future.agg_trade('1000PEPEUSDT')
+    my_client_bn_future = UMFuturesWebsocketClient(on_message=message_handler_bn_future) 
+    my_client_bn_future.partial_book_depth()
 
 if __name__ == '__main__':
     
