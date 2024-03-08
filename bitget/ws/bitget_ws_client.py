@@ -6,7 +6,7 @@ import time
 import traceback
 from threading import Timer
 from zlib import crc32
-
+from dataManager import dataManager
 import websocket
 
 from bitget.consts import GET
@@ -19,7 +19,6 @@ WS_OP_UNSUBSCRIBE = "unsubscribe"
 
 def handle(message):
     print("default:" + message)
-
 
 def handel_error(message):
     print("default_error:" + message)
