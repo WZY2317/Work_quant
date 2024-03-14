@@ -5,6 +5,7 @@ class dataManager:
         res={}
         data=json.loads(message)
         time_stamp=int(data['E'])
+        size=len(data['a'][0][0])
         bids1=float(data['b'][0][0])
         #amount_bid1=float(data['bids'][0][1])
         asks1=float(data['a'][0][0])
